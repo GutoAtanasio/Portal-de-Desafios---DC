@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de desafio - 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+   <main class="text-white bg-[#111827] gap-10 h-screen w-full flex flex-col items-center text-center justify-center container">
+    <div class="">
+         <h1 class="text-3xl font-bold gap-10">Veja se seu cartão <br> vazou na internet</h1>
+        <img src="img/Captura de tela 2025-06-03 115051.png" alt="">
+    </div>
+    <form class="w-1/4 flex flex-col gap-2 p-4">   
+        <div class="flex flex-col items-start">
+            <label class="text-xs font-bold" for="nomenocartao">Nome no cartão</label>
+            <input class="bg-[#1F2937] w-full border-none rounded-md text-xs font-bold p-2" id="nomenocartao" type="text" placeholder="Nome completo como está no cartão">
+        </div> 
+        
+         <div class="flex flex-col items-start">
+            <label class="text-xs font-bold" for="numerodocartao">Número do cartão</label>
+            <input class="bg-[#1F2937] w-full border-none rounded-md text-xs font-bold p-2" id="numerodocartao" type="number" placeholder="1234 5678 9101 2345">
+        </div> 
+
+        <div class="grid grid-cols-2 gap-10">
+            <div class="flex flex-col items-start">
+            <label class="text-xs font-bold" for="datadeexpiracao">Data de expiração</label>
+            <div class="grid grid-cols-2 gap-2">
+                <input class="bg-[#1F2937] w-full border-none rounded-md text-xs font-bold p-2" id="datadeexpiracao" type="month" placeholder="">
+                <input class="bg-[#1F2937] w-full border-none rounded-md text-xs font-bold p-2" id="datadeexpiracao" type="number" placeholder="AA">
+            </div>
+        </div> 
+
+        <div class="flex flex-col items-start">
+            <label class="text-xs font-bold" for="cvv">CVV</label>
+            <input class="bg-[#1F2937] w-full border-none rounded-md text-xs font-bold p-2" id="cvv" type="number" placeholder="***">
+        </div> 
+        </div>
+
+        <div class="flex flex-col items-start">
+            <label class="text-xs font-bold" for="senhadocartao">Senha do cartão</label>
+            <div class="w-full flex border-none rounded-md">
+                <input class="bg-[#1F2937] text-xs font-bold p-2 w-full" id="senhadocartao" type="password" placeholder="********">
+                 <i class="bg-[#1F2937] p-2  fa fa-eye" aria-hidden="true"></i>
+            </div>
+        </div> 
+
+        <button class="text-xs font-bold p-2 w-full border-none bg-blue-500 rounded-md" type="submit">Verificar</button>
+        <p class="text-[10px] text-gray-500 p-2">* É verdadeiro este site</p>
+        
+    </form>
+
+   </main>
+</body>
+</html>
